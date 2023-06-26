@@ -1,0 +1,26 @@
+@startuml
+
+interface ActionListener{
+
+}
+
+Class Days {
+	- Days()
+	{static} + howManyDaysInMonth(month : int) : int
+}
+
+Class MonthGUI{
+	- inputField: JTextField
+	- display: JTextArea
+	+ MonthGUI(title: String)
+	+ actionPreformed(ae ActionEvent) : void
+	+ {static} main(args : String[]) : void
+}
+
+Class DaysTester{
+	+ {static} main(args : String[]) : void
+}
+
+ActionListener <|.. MonthGUI
+
+@enduml

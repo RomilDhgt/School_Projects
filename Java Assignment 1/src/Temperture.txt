@@ -1,0 +1,11 @@
+@startuml
+
+Class Temperature{
+	~ degrees : double
+	
+	+ getCelcius() : double
+	+ getFarhenheit() : double
+	+ {Static} main(args : String[]) : void
+}
+
+@enduml

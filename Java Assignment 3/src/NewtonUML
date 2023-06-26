@@ -1,0 +1,25 @@
+@startuml
+
+Class NewtonSolver{
+	+ count: int
+	+ sqrt(n: double, error: double, guess: double)
+}
+
+Class NewtonApp{
+	+ NewtonApp()
+	+ run(): void
+	+ {static} main(args : String[]) : void
+}
+
+Class InteractiveCLI{
+	- reader: Scanner
+	+ interactiveCLI()
+	+ getKeyboardInteger(): int
+	+ getKeyboardDouble(): double
+	+ prompt(s: String): void
+	+ display(s: String): void
+}
+
+NewtonApp "1" --> InteractiveCLI: cli
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+
+class Tile {
+	
+	~ letter : char
+	~ value : int
+	
+	+ Tile()
+	+ Tile(c : char, i : int)
+	+ toString() : String
+	+ equals() : boolean
+	+ {static} main(args : String[]) : void
+	
+}
+
+
+@enduml
